@@ -382,7 +382,7 @@ vendor.qti.hardware.perf@2.2.vendor
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
-   
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
@@ -449,6 +449,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.emmc \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi_holi-multihal \
@@ -461,7 +465,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 30    
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
