@@ -731,6 +731,7 @@
     <integer name="config_multiuserMaximumUsers">4</integer>
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/fastchg_mode</string>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/fastcharge_mode</string>
+
     
 </resources>
