@@ -48,6 +48,9 @@
 /data/vendor/thermal(/.*)?								u:object_r:thermal_data_file:s0
 /vendor/bin/mi_thermald									u:object_r:mi_thermald_exec:s0
 
+# Touchfeature
+/dev/xiaomi-touch                                           u:object_r:vendor_touchfeature_device:s0
+
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_holi			u:object_r:hal_vibrator_default_exec:s0
 
