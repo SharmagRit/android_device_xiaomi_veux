@@ -479,10 +479,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
