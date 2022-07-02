@@ -654,6 +654,14 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
+# Diag
+system_ext/lib64/vendor.qti.diaghal@1.0.so
+system_ext/lib64/libdiag_system.so
+vendor/bin/diag-router
+vendor/etc/init/vendor.qti.diag.rc
+-vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+vendor/lib64/vendor.qti.diaghal@1.0.so
+
 # Display
 vendor/bin/qdcmss
 vendor/etc/display/DPU660.xml
@@ -695,6 +703,9 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Display SVIConfig
+vendor/etc/SVIConfig.xml
+
 # DPM
 system/framework/tcmclient.jar
 system_ext/bin/dpmd
@@ -734,6 +745,10 @@ vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
 vendor/lib64/libtrustedapploader.so
+
+# DRM-HDCP
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/libmm-hdcpmgr.so
 
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
@@ -870,10 +885,8 @@ system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
-system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
-system_ext/lib64/vendor.qti.diaghal@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 -system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
@@ -1267,7 +1280,6 @@ system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/bin/hw/qcrilNrd
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
-vendor/bin/diag-router
 vendor/bin/netmgrd
 vendor/bin/pd-mapper
 vendor/bin/port-bridge
