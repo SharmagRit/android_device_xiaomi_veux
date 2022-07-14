@@ -1,0 +1,4 @@
+allow system_app qemu_hw_prop:file { open };
+allow system_app qemu_hw_prop:file { read };
+allow system_app qemu_hw_prop:file { getattr };
+allow system_app qemu_hw_prop:file { map };
